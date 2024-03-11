@@ -1,2 +1,19 @@
-Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+svar=input("vill du höra en hemlighet?")
+if svar=="ja":
+    print("fortfarande hemligt")
+else:
+    print("vad synd")
+
+svar=input("skriv en bokstav")
+if svar=="a":
+    print("första")
+elif svar=="ö":
+    print("sista")
+else:
+    print("fel")
+
+svar=input("skriv ett heltal")
+if svar=="4":
+    print("rätt")
+else:
+    print("fel")
