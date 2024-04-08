@@ -1,4 +1,12 @@
 # Programmering
+
+## vecka 12 - Sänka skepp
+
+### lista med mål
+
+1. Skriva kordinater
+
+
 ## Vecka 41
 Jag fick 6/6 på provet så jag gjorde ingenting förutom att fixa loggboken
 
@@ -25,3 +33,6 @@ Jag har pluggat inför prov nr 8
 
 ## Vecka 3
 Jag har pluggat inför prov nr 8 
+
+## Vecka 13
+Jag har börjat göra sänka skepp
