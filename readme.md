@@ -36,3 +36,7 @@ Jag har pluggat inför prov nr 8
 
 ## Vecka 13
 Jag har börjat göra sänka skepp
+
+## Vecka 15 
+Rikard har hjälpt mig med att visa hur man gör så man får lägga ut sina egna skepp i början på varje spel
+Nästa gång skall jag testa att slumpa placeringen på skeppen
