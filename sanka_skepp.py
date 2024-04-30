@@ -170,4 +170,3 @@ y = int(y)
 direction = input("välj riktning (right eller down)")
 game.add_ship(3, Point(x, y), direction)
 game.play()
-

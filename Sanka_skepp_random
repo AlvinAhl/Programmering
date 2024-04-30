@@ -1,3 +1,9 @@
+def print_ships_coordinates():
+    for ship in game.board.ships:
+        for part in ship.ship_parts:
+            print("x, y: ", part.point.column, "," , part.point.row)
+
+
 class Point:
     """Point in 2D space."""
     def __init__(self, column = 0, row = 0):
@@ -126,6 +132,7 @@ class Board:
                     print('X', end='')
                 elif point in self.misses:
                     print('O', end='')
+                
                 else:
                     print('.', end='')
             print()
@@ -165,11 +172,17 @@ import random
 
 #
 directions = ['down', 'right']
+
+# ship 1
 x = random.randint(0,8)
 y = random.randint(0,8)
 random_direction = random.choice(directions)
 game.add_ship(3, Point(x, y), random_direction)
+
+# ship 2
+x = random.randint(0,8)
+y = random.randint(0,8)
+random_direction = random.choice(directions)
 game.add_ship(2, Point(x, y), random_direction)
-direction = input("välj riktning (right eller down)")
-game.add_ship(3, Point(x, y), direction)
+print_ships_coordinates()
 game.play()
