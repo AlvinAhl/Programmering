@@ -1,4 +1,6 @@
 # Programmering
+## Vecka 16
+Idag har jag och rikard lyckats ändra så att skeppen inte kommer på samma ställen utan delar upp sig i 2 skepp
 
 ## Vecka 15 
 Rikard har hjälpt mig med att visa hur man gör så man får lägga ut sina egna skepp i början på varje spel

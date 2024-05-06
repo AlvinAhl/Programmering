@@ -60,11 +60,11 @@ class Ship:
         self.hits = 0
         self.ship_parts = []
         if orientation == 'right':
-            for x in range(length):
-                self.ship_parts.append(ShipPart(Point(start_point.column + x, start_point.row)))
+            for row in range(length):
+                self.ship_parts.append(ShipPart(Point(start_point.column + row, start_point.row)))
         elif orientation == 'down':
-            for y in range(length):
-                self.ship_parts.append(ShipPart(Point(start_point.column, start_point.row + y)))
+            for column in range(length):
+                self.ship_parts.append(ShipPart(Point(start_point.column, start_point.row + column)))
 
     def try_hit(self, point):
         """Returns True if the given point is within the ship."""
@@ -125,9 +125,9 @@ class Board:
 
     def print(self):
         """Print the board."""
-        for y in range(self.height):
-            for x in range(self.width):
-                point = Point(x, y)
+        for column in range(self.height):
+            for row in range(self.width):
+                point = Point(row, column)
                 if point in self.hits:
                     print('X', end='')
                 elif point in self.misses:
@@ -174,15 +174,15 @@ import random
 directions = ['down', 'right']
 
 # ship 1
-x = random.randint(0,8)
-y = random.randint(0,8)
+row = random.randint(0,5)
+column = random.randint(0,5)
 random_direction = random.choice(directions)
-game.add_ship(3, Point(x, y), random_direction)
+game.add_ship(3, Point(row, column), random_direction)
 
 # ship 2
-x = random.randint(0,8)
-y = random.randint(0,8)
+row = random.randint(0,6)
+column = random.randint(0,6)
 random_direction = random.choice(directions)
-game.add_ship(2, Point(x, y), random_direction)
+game.add_ship(2, Point(row, column), random_direction)
 print_ships_coordinates()
 game.play()
